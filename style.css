@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Playfair Display", serif;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 50px 0 30px 0;
+    text-align: center;
+    font-size: 40px;
+}
+header p {
+    font-size: 20px;
+}
+.pads {
+    background: rgb(208, 255, 193);
+    width: 100%;
+    display: flex;
+}
+
+.pads > div {
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+
+.pad1 {
+    background: rgb(173, 255, 47);
+}
+.pad2 {
+    background: rgb(255, 155, 233);
+}
+.pad3 {
+    background: rgb(253, 255, 120);
+}
+.pad4 {
+    background: rgb(243, 111, 150);
+}
+.pad5 {
+    background: rgb(150, 255, 255);
+}
+.pad6 {
+    background: rgb(158, 200, 255);
+}
+
+.visual > div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
